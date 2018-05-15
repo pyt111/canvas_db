@@ -41,7 +41,7 @@ export default {
         this.draw(200, 200);
     },
     methods: {
-        drag(x, y,w,h) {
+        drag(x, y) {
             let ctx = this.ctx;
             if (ctx.isPointInPath(x, y)) {
                 this.c.onmousemove = ev => {
